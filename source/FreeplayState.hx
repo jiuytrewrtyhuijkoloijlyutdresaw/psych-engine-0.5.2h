@@ -51,6 +51,13 @@ class FreeplayState extends MusicBeatState
 	var colorTween:FlxTween;
 
 	override function create()
+	switch (FreeplaySelectState.freeplayCats[FreeplaySelectState.curCategory].toLowerCase())
+
+            {
+
+                case 'base':
+
+                    addWeek(['Tutorial'], 0, 0xFFce3c80, ['gf']);
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
